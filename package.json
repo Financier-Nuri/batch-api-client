@@ -1,0 +1,28 @@
+{
+  "name": "batch-api-client",
+  "version": "1.0.0",
+  "description": "High-performance batch API client with adaptive batching, retry logic, and per-item status tracking. Reduces N HTTP round trips to 1 — up to 20x throughput improvement.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "batch",
+    "api",
+    "http",
+    "bulk",
+    "performance",
+    "retry",
+    "queue"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.0"
+  }
+}
